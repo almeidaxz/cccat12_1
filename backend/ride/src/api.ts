@@ -31,6 +31,4 @@ app.post("/register_driver", function (req, res) {
   }
 });
 
-app.listen(() => {
-  console.log(`Api rodando na porta ${3000}`);
-}, 3000);
+app.listen(3000);
