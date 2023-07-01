@@ -32,8 +32,8 @@ test("Se a distância for inválida deve lançar um erro", async function () {
 test("Deve retornar um novo motorista", async function () {
   const input = {
     name: "Lucas",
-    email: "almeidaxz@live.com",
-    document: "072.166.135-11",
+    email: "motorista@live.com",
+    document: "684.655.640-00",
     carPlate: "ACB-1234",
   };
   const response = await axios.post(
@@ -47,8 +47,8 @@ test("Deve retornar um novo motorista", async function () {
 test("Deve retornar um novo passageiro", async function () {
   const input = {
     name: "Lucas",
-    email: "almeidaxz@live.com",
-    document: "072.166.135-11"
+    email: "passageiro@live.com",
+    document: "684.655.640-00"
   };
   const response = await axios.post(
     "http://localhost:3000/register_passenger",
