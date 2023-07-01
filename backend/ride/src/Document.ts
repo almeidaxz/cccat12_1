@@ -20,9 +20,10 @@ export class Document {
 
   isValidDocumentLength(documentNumber) {
     return (
-      documentNumber.length < this.CPF_RANGE ||
-      documentNumber.length > this.CPF_MAX_RANGE
-    );
+      documentNumber.length > this.CPF_RANGE && documentNumber.length < this.CPF_MAX_RANGE
+      ||
+      documentNumber.length < this.CPF_RANGE || documentNumber.length > this.CPF_MAX_RANGE
+    )
   }
 
   isOnlyRepeatedNumbers(documentNumber) {
